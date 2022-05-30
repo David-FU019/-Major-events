@@ -1,0 +1,50 @@
+body {
+  height: 100vh;
+  background: url(../images/login_bg.jpg) no-repeat center / cover;
+}
+.panel {
+  width: 400px;
+  height: 310px;
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.panel .title {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.panel .reg {
+  display: none;
+}
+.panel .login,
+.panel .reg {
+  padding: 0 30px;
+}
+.panel .login .layui-form-item,
+.panel .reg .layui-form-item {
+  position: relative;
+}
+.panel .login .layui-form-item .layui-icon,
+.panel .reg .layui-form-item .layui-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.panel .login .layui-form-item .layui-input,
+.panel .reg .layui-form-item .layui-input,
+.panel .login .layui-form-item .layui-textarea,
+.panel .reg .layui-form-item .layui-textarea {
+  display: block;
+  width: 100%;
+  padding-left: 30px;
+}
+.panel .login .tab,
+.panel .reg .tab {
+  display: flex;
+  justify-content: end;
+}
