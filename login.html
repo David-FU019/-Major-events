@@ -14,7 +14,7 @@
 <body>
 
     <!-- 标题 -->
-    <div class="leiyi-main">
+    <div class="layui-main">
         <img src="./assets/images/logo.png" alt="">
     </div>
     <!-- 登陆注册面板 -->
@@ -28,7 +28,7 @@
                 <div class="layui-form-item">
 
                     <i class="layui-icon">&#xe66f;</i>
-                    <input type="text" name="title" required lay-verify="required|username" placeholder="请输入标题"
+                    <input type="text" name="username" required lay-verify="required|username" placeholder="请输入标题"
                         autocomplete="off" class="layui-input">
 
                 </div>
@@ -57,7 +57,7 @@
                 <div class="layui-form-item">
 
                     <i class="layui-icon">&#xe66f;</i>
-                    <input type="text" name="title" required lay-verify="required|username" placeholder="请输入标题"
+                    <input type="text" name="username" required lay-verify="required|username" placeholder="请输入标题"
                         autocomplete="off" class="layui-input ">
 
                 </div>
@@ -73,8 +73,8 @@
                 <div class="layui-form-item">
 
                     <i class="layui-icon">&#xe673;</i>
-                    <input type="password" name="password" required lay-verify="required|repwd" placeholder="请确认密码"
-                        autocomplete="off" class="layui-input ">
+                    <input type="password" required lay-verify="required|repwd" placeholder="请确认密码" autocomplete="off"
+                        class="layui-input ">
 
 
                 </div>
@@ -93,6 +93,7 @@
 </body>
 <script src="./assets/lib/layui/layui.all.js"></script>
 <script src="./assets/lib/jquery.js"></script>
+<script src="./assets/js/baseApi.js"></script>
 <script src="./assets/js/login.js"></script>
 
 </html>
