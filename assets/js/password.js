@@ -24,10 +24,30 @@ $('form').on('submit', function (e) {
 
                 this.reset()
             }
-
-
             layer.msg(res.message)
         }
 
     })
 })
+
+let is = document.querySelectorAll('.layui-input-block i')
+
+
+for (let i = 0, len = is.length; i < len; i++) {
+
+    let flag = true
+    is[i].onclick = (function () {
+        return function () {
+            if (flag) {
+                this.className = 'iconfont  icon-visible1-copy'
+                flag = false
+            } else {
+                this.className = 'iconfont  icon-no-visible'
+                flag = true
+            }
+        }
+    })()
+}
+
+
+

@@ -22,7 +22,7 @@ $(".reg form").on('submit', function (e) {
 
     $.ajax({
         type: "post",
-        url: "http://big-event-api-t.itheima.net/api/reguser",
+        url: "api/reguser",
         data: params,
 
         success: (res) => {

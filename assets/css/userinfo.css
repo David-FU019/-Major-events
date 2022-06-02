@@ -5,3 +5,8 @@ body {
 .layui-input {
   width: 400px;
 }
+.layui-form-item .user-name {
+  cursor: not-allowed;
+  background-color: #dfe6e9;
+  opacity: 0.4;
+}
